@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech-Ai | Your Intelligent Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="tech-ai-logo">
+                <div class="logo-icon">🤖</div>
+                <h1>Tech-Ai</h1>
+            </div>
+            <div class="loading-animation">
+                <div class="loading-dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+            <p class="loading-text">Initializing AI Assistant...</p>
+        </div>
+    </div>
+
+    <!-- Main App (Hidden until loaded) -->
+    <div id="mainApp" class="main-app hidden">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">🤖</div>
+                    <h1>Tech-Ai</h1>
+                </div>
+                <div class="developer-badge">
+                    <span>Developed by Emmy Tech</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Container -->
+        <div class="app-container">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <button class="new-chat-btn" id="newChatBtn">
+                    <i class="fas fa-plus"></i>
+                    <span>New Chat</span>
+                </button>
+
+                <div class="features-card">
+                    <h3>🎯 AI Capabilities</h3>
+                    <ul class="features-list">
+                        <li><i class="fas fa-calculator"></i> 2M+ Calculations</li>
+                        <li><i class="fas fa-book"></i> 10K+ Dictionary</li>
+                        <li><i class="fas fa-code"></i> 500+ Tech Q&A</li>
+                        <li><i class="fas fa-brain"></i> Smart Responses</li>
+                        <li><i class="fas fa-rocket"></i> Instant Answers</li>
+                        <li><i class="fas fa-bolt"></i> No Backend Needed</li>
+                    </ul>
+                </div>
+
+                <div class="chat-history">
+                    <h4>Recent Chats</h4>
+                    <div class="history-items">
+                        <div class="history-item active">
+                            <i class="fas fa-comment"></i>
+                            <span>Welcome Session</span>
+                        </div>
+                        <div class="history-item">
+                            <i class="fas fa-calculator"></i>
+                            <span>Math Help</span>
+                        </div>
+                        <div class="history-item">
+                            <i class="fas fa-code"></i>
+                            <span>Programming</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="status-card">
+                    <div class="status-indicator">
+                        <div class="status-dot online"></div>
+                        <span>AI: Online</span>
+                    </div>
+                    <div class="status-info">
+                        <p><i class="fas fa-check-circle"></i> All Systems Ready</p>
+                        <p><i class="fas fa-bolt"></i> Frontend Powered</p>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Chat Area -->
+            <main class="chat-area">
+                <div class="messages-container" id="messagesContainer">
+                    <!-- Messages will be added here by JavaScript -->
+                </div>
+
+                <!-- Input Area -->
+                <div class="input-container">
+                    <div class="input-wrapper">
+                        <textarea 
+                            id="messageInput" 
+                            class="message-input" 
+                            placeholder="Ask me anything... Calculations, definitions, tech questions..."
+                            rows="1"
+                        ></textarea>
+                        <button id="sendButton" class="send-btn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    <div class="quick-actions">
+                        <button class="quick-btn" data-message="Calculate 15 + 27">
+                            <i class="fas fa-calculator"></i> Calculation
+                        </button>
+                        <button class="quick-btn" data-message="What is JavaScript?">
+                            <i class="fas fa-book"></i> Definition
+                        </button>
+                        <button class="quick-btn" data-message="How to learn programming?">
+                            <i class="fas fa-code"></i> Tech Help
+                        </button>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <p>&copy; 2025 Tech-Ai | Developed by Emmy Tech | Powered by Pure Frontend AI</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
